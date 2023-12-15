@@ -1,7 +1,7 @@
 org_name: nullstone
-name: aws-sns-subscribe
-friendly_name: AWS SNS Subscribe
-description: Connects an application to an SNS topic as a subscriber to receive messages.
+name: aws-sns-pubsub
+friendly_name: AWS SNS PubSub
+description: Connects an application to an SNS topic as a subscriber and publisher.
 category: capability
 subcategory: datastores
 provider_types:
