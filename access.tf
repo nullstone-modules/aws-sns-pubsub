@@ -16,7 +16,9 @@ data "aws_iam_policy_document" "access" {
 
     actions = [
       "sns:GetTopicAttributes",
-      "sns:Subscribe"
+      "sns:Subscribe",
+      "sns:Publish",
+      "sns:SetTopicAttributes",
     ]
   }
 
