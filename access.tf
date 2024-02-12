@@ -28,7 +28,10 @@ data "aws_iam_policy_document" "access" {
     content {
       effect    = "Allow"
       resources = [statement.value]
-      actions   = ["kms:Decrypt"]
+      actions   = [
+        "kms:GenerateDataKey",
+        "kms:Decrypt"
+      ]
     }
   }
 }
